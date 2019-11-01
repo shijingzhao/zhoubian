@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/com/com/com",
+    "pages/home/home/home",
+    "components/card/card-post",
+    "components/comment/comment-post"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "周边",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#aaaaaa",
+    "selectedColor": "#2ba8fc",
+    "list": [
+      {
+        "iconPath": "/imgs/tabbar/com.png",
+        "selectedIconPath": "/imgs/tabbar/com_cur.png",
+        "pagePath": "pages/com/com/com",
+        "text": "圈子"
+      },
+      {
+        "iconPath": "/imgs/tabbar/my.png",
+        "selectedIconPath": "/imgs/tabbar/my_cur.png",
+        "pagePath": "pages/home/home/home",
+        "text": "我的"
+      }
+    ]
+  }
+}

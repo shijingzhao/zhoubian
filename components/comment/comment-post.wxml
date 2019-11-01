@@ -1,0 +1,28 @@
+<!-- 评论 -->
+<comment-post>
+  <view class="cu-list menu-avatar comment solids-top">
+    <view class="cu-item" wx:for="{{comment}}" wx:key="item.post_id">
+      <!-- <view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png);"></view> -->
+      <view class="content">
+        <view class="text-grey">{{item.author.nickname}}</view>
+        <view class="text-gray text-content text-df">
+          {{item.post.content}}
+        </view>
+        <!-- <view class="bg-grey padding-sm radius margin-top-sm  text-sm"> -->
+        <!-- <view class="flex"> -->
+        <!-- <view>凯尔：</view> -->
+        <!-- <view class="flex-sub" wx:for="{{item.comment}}" wx:for-item="comm" wx:key="{{index}}">{{comm.post.content}}</view> -->
+        <!-- </view> -->
+        <!-- </view> -->
+        <view class="margin-top-sm flex justify-between">
+          <view class="text-gray text-df">{{item.post.created}}</view>
+          <!-- 点赞 评论 -->
+          <view>
+            <!-- <text class="cuIcon-appreciatefill text-red"></text> -->
+            <!-- <text class="cuIcon-messagefill text-gray margin-left-sm"></text> -->
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</comment-post>

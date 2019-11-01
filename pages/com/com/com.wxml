@@ -1,0 +1,11 @@
+<cu-custom bgColor="bg-theme-color" isLeft="{{true}}">
+  <view slot="backText">周边</view>
+</cu-custom>
+
+<view class="cu-bar bg-white solid-bottom">
+  <view class='action'>
+    <text class='cuIcon-titles text-orange '></text> 动态类卡片
+  </view>
+</view>
+
+<card-post wx:if="{{postData}}" list="{{postData}}" />

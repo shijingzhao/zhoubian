@@ -1,0 +1,41 @@
+<!--components/card/card-post.wxml-->
+<card-post>
+  <view class="cu-card dynamic">
+    <view class="cu-item shadow" wx:for="{{list}}" wx:key="{{item.post_id}}">
+
+      <!-- head 昵称 头像 日期 -->
+      <view class="cu-list menu-avatar">
+        <view class="cu-item">
+          <view class="cu-avatar round lg" style="background-image:url({{item.author.avatar}});"></view>
+          <view class="content flex-sub">
+            <view>{{item.author.nickname}}</view>
+            <view class="text-gray text-sm flex justify-between">
+              {{item.post.created}}
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 内容 -->
+      <view class="text-content">
+        {{item.post.content}}
+      </view>
+
+      <!-- 图片 -->
+      <view class="grid flex-sub padding-lr col-3 grid-square">
+        <view class="bg-img" style="background-image:url({{img}});" wx:for="{{item.post.images}}" wx:for-item="img" wx:key="{{index}}">
+        </view>
+      </view>
+
+      <!-- foot 评论数 点赞数 -->
+      <view class="text-gray text-sm text-right padding">
+        <!-- <text class="cuIcon-attentionfill margin-lr-xs"></text> 10 -->
+        <text class="cuIcon-appreciatefill margin-lr-xs"></text>{{item.post.thumbs_up_number}}
+        <text class="cuIcon-messagefill margin-lr-xs"></text>{{item.post.comment_number}}
+      </view>
+  
+      <!-- comment -->
+      <comment-post wx:if="{{item.comment}}" comment="{{item.comment}}" />
+    </view>
+  </view>
+</card-post>

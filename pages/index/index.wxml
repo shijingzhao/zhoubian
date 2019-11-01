@@ -1,0 +1,18 @@
+<!--pages/index/index.wxml-->
+<com wx:if="{{PageCur=='com'}}"></com>
+<home wx:if="{{PageCur=='home'}}"></home>
+<view class='cu-bar tabbar bg-white shadow foot'>
+  <view class='action' bindtap="NavChange" data-cur="com">
+    <view class='cuIcon-cu-image'>
+      <image src='/imgs/tabbar/com_cur.png'></image>
+    </view>
+    <view class='theme_color'>首页</view>
+  </view>
+
+  <view class='action' bindtap="NavChange" data-cur="home">
+    <view class='cuIcon-cu-image'>
+      <image src='/imgs/tabbar/com.png'></image>
+    </view>
+    <view>首页</view>
+  </view>
+</view>

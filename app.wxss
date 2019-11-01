@@ -1,0 +1,15 @@
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
+
+.theme_color {
+  color: #2ba8fc;
+}
+
+.bg-theme-color {
+  background-color: #2ba8fc;
+  color: var(--white);
+}
+
+.bottom-margin {
+  height: calc(100rpx + env(safe-area-inset-bottom) / 2);
+}
