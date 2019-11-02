@@ -3,7 +3,8 @@
     "pages/com/com/com",
     "pages/home/home/home",
     "components/card/card-post",
-    "components/comment/comment-post"
+    "components/comment/comment-post",
+    "pages/com/add/add"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,7 +1,7 @@
 @import "colorui/main.wxss";
 @import "colorui/icon.wxss";
 
-.theme_color {
+.theme-color {
   color: #2ba8fc;
 }
 

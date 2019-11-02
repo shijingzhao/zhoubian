@@ -3,9 +3,13 @@
 </cu-custom>
 
 <view class="cu-bar bg-white solid-bottom">
-  <view class='action'>
-    <text class='cuIcon-titles text-orange '></text> 动态类卡片
+  <view class="action">
+    <text class="cuIcon-titles theme-color"></text> 动态类卡片
   </view>
+  <navigator class="action" url="/pages/com/add/add" hover-class="none">
+    <text class="cuIcon-add theme-color"></text>
+    <text class="text-df theme-color">发布</text>
+  </navigator>
 </view>
 
 <card-post wx:if="{{postData}}" list="{{postData}}" />
